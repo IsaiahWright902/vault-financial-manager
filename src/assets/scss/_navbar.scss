@@ -7,9 +7,6 @@ nav {
 }
 .container-fluid {
   width: 91%;
-  @include respond(tablet) {
-    width: 100%;
-  }
 }
 .navbar {
   background-color: rgba(0, 0, 0, 0.85) !important;
