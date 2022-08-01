@@ -1,0 +1,131 @@
+@import "../querries";
+@import "../variables";
+
+// Top Stats
+.top-stats {
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.stats-amount {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 50px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 5px 0;
+  transition: all 0.5s;
+  @include respond(tab-port) {
+    font-size: 40px;
+  }
+  @include respond(tablet) {
+    font-size: 35px;
+  }
+  @include respond(phone) {
+    font-size: 25px;
+  }
+}
+
+.income {
+  color: $green-dark;
+}
+
+.expense {
+  color: $red-dark;
+}
+
+// Add Transaction
+
+.card {
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.4);
+  outline: none;
+  border: none;
+
+  line-height: 1;
+  transition: all 0.5s;
+  @include respond(tab-port) {
+    text-align: center;
+  }
+  @include respond(phone) {
+    border: none;
+  }
+}
+
+// History
+.history-heading {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 40px;
+  font-weight: 500;
+  transition: all 0.5s;
+  @include respond(tab-port) {
+    text-align: center;
+  }
+}
+
+// History
+
+.history-item {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  box-shadow: 0 0 0.15rem rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  // margin: 10px;
+  transition: all 0.5s;
+  &:hover {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    cursor: pointer;
+    & .red-x {
+      display: block;
+    }
+  }
+}
+
+.history-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  @include respond(tablet) {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.history-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.history-date {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.history-amount {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.history-amount-plus {
+  color: $green-dark;
+}
+
+.history-amount-minus {
+  color: $red;
+}
+
+.history-description {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.center-on-mobile {
+  @include respond(tablet) {
+    text-align: center;
+  }
+  @include respond(phone) {
+    text-align: center;
+  }
+}
