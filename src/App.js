@@ -7,6 +7,7 @@ import { Navbar } from "./Components/Navbar";
 
 import { GlobalProvider } from "./context/GlobalState";
 import { GoodPup } from "./Pages/GoodPup";
+import { GetStarted } from "./Pages/GetStarted";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="dashboard" element={<Dashboard />} />
-          <Route path="goodPup" element={<GoodPup />} />
+          <Route path="getStarted" element={<GetStarted />} />
         </Routes>
       </div>
     </GlobalProvider>

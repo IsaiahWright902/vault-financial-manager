@@ -12,8 +12,8 @@ export const Home = () => {
             A financial tool to help manage your money & save for the future by
             setting goals.
           </p>
-          <Link to="/dashboard" style={{ textDecoration: "none" }}>
-            <button className="btn btn--white">Open Dashboard</button>
+          <Link to="/getStarted" style={{ textDecoration: "none" }}>
+            <button className="btn btn--white">Get Started</button>
           </Link>
         </div>
       </div>

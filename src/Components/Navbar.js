@@ -6,15 +6,15 @@ import { Link } from "react-router-dom";
 export const Navbar = () => {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container-fluid">
           <Link to="/" style={{ textDecoration: "none" }}>
-            <a class="navbar-brand mx-2" href="/#">
-              Vault <span class="small-brand"> - Financial Manager</span>
+            <a className="navbar-brand mx-2" href="/#">
+              Vault <span className="small-brand"> - Financial Manager</span>
             </a>
           </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -22,14 +22,14 @@ export const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li className="nav-item">
                 <Link to="/about" style={{ textDecoration: "none" }}>
                   <a
-                    class="nav-link"
+                    className="nav-link"
                     aria-current="page"
                     href="https://github.com/IsaiahWright902"
                     target="blank"
@@ -38,10 +38,10 @@ export const Navbar = () => {
                   </a>
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link to="/dashboard" style={{ textDecoration: "none" }}>
                   <a
-                    class="nav-link"
+                    className="nav-link"
                     href="https://www.linkedin.com/in/isaiah-wright-4b89191a3/"
                     target="blank"
                   >
@@ -50,9 +50,9 @@ export const Navbar = () => {
                 </Link>
               </li>
 
-              <li class="nav-item dropdown">
+              <li className="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle"
                   href="/#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -60,19 +60,19 @@ export const Navbar = () => {
                 >
                   Isaiah Wright
                 </a>
-                <ul class="dropdown-menu">
+                <ul className="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="/#">
+                    <a className="dropdown-item" href="/#">
                       Account
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/#">
+                    <a className="dropdown-item" href="/#">
                       Settings
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/#">
+                    <a className="dropdown-item" href="/#">
                       Updates
                     </a>
                   </li>

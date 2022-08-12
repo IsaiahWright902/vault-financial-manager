@@ -4,6 +4,12 @@ import AppReducer from "./AppReducer";
 // Initial State
 const initialState = {
   transactions: [],
+  account: {
+    hourlyRate: 0,
+    weeklyRate: 0,
+    monthlyRate: 0,
+    yearlyRate: 0,
+  },
 };
 
 // Create Context
@@ -43,6 +49,7 @@ export const GlobalProvider = ({ children }) => {
         deleteTransaction,
         addTransaction,
         editTransaction,
+        account: state.account,
       }}
     >
       {children}
