@@ -13,8 +13,6 @@ export const Dashboard = () => {
   const amounts = transactions.map((transaction) => transaction.amount);
   const total = amounts.reduce((acc, item) => acc + item, 0);
 
-  console.log(total);
-
   const welcomeMessage = () => {
     if (total === 0) {
       return "Hey Isaiah, looks like nothing has been added yet! Time to start saving.";

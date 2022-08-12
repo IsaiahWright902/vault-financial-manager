@@ -6,6 +6,7 @@ import { Dashboard } from "./Pages/Dashboard";
 import { Navbar } from "./Components/Navbar";
 
 import { GlobalProvider } from "./context/GlobalState";
+import { GoodPup } from "./Pages/GoodPup";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="dashboard" element={<Dashboard />} />
+          <Route path="goodPup" element={<GoodPup />} />
         </Routes>
       </div>
     </GlobalProvider>

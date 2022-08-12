@@ -62,7 +62,7 @@ export const Transaction = ({ transaction }) => {
             class="btn btn--black-outline btn--sm w-100"
             type="button"
             data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasExample"
+            data-bs-target={`#${transaction.text}`}
             aria-controls="offcanvasExample"
           >
             View Transaction
@@ -72,7 +72,7 @@ export const Transaction = ({ transaction }) => {
 
       <div
         class="offcanvas offcanvas-end"
-        id="offcanvasExample"
+        id={`${transaction.text}`}
         aria-labelledby="offcanvasExampleLabel"
       >
         <div class="offcanvas-header">
